@@ -124,11 +124,12 @@ header {
     height: 60vh;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: 3.7rem;
     padding: 100px;
     text-align: center;
     font-family: "Jersey 10";
     color: #333;
+    margin-top: 40px;
 }
 
 .text h2 {
