@@ -101,6 +101,7 @@ header {
     width: auto;
     height: fit-content;
     column-gap: 30px;
+    margin: 30px;
 }
 
 .contatos img {
