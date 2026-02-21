@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html::selection {
+    background-color: rgba(255, 230, 0, 0.685);
+}
+
+header {
+    display: flex;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    padding: 10px 5px;
+    align-items: center;
+    justify-content: space-around;
+  
+    background-image: linear-gradient(to top, transparent, rgba(255, 208, 0, 0.219));
+}
+
+.logo img{
+    width: 10vw;
+    transition: ease 0.6s;
+}
+
+.logo img:hover{
+    scale: 1.08;
+}
+.nav-lvls {
+    display: flex;
+    flex-direction: row;
+  
+    width: auto;
+    height: fit-content;
+    column-gap: 30px;
+}
+
+.nav-lvls button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    padding: 10px 20px;
+
+    font-size: 1.8rem;
+    font-family: "Jersey 10", system-ui;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.247);
+    transition: 0.4s linear;
+}
+
+.nav-lvls button:hover {
+    animation: pulsar 1s infinite linear;
+    cursor: pointer;
+}
+
+@keyframes pulsar {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+.dif-easy {
+    background-image: linear-gradient(to right, green, rgb(2, 173, 2));
+}
+
+.dif-medium {
+    background-image: linear-gradient(to right, rgb(247, 222, 0), rgb(255, 187, 0));
+}
+
+.dif-hard {
+    background-image: linear-gradient(to right, rgb(128, 0, 0), rgb(173, 2, 2));
+}
+
+.nav-lvls img {
+    width: 60px;
+}
+
+.nav-lvls a {
+    text-decoration: none;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: fit-content;
+    column-gap: 30px;
+}
+
+.contatos img {
+    width: 50px;
+    transition: 0.4s linear;
+}
+
+.contatos img:hover {
+    scale: 1.05;
+}
+
+
+
+
+
+.text {
+    display: flex;
+    flex-direction: column  ;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    padding: 100px;
+    text-align: center;
+    font-family: "Jersey 10";
+    color: #333;
+}
+
+.text h2 {
+    animation: pulsar 2s infinite linear;
+}
+
+.pai-questao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questao {
+    border: none;
+    box-shadow: 0px 0px 10px rgb(255, 238, 0);
+    height: auto;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #ffd900;
+    border-radius: 40px;
+    scale: 0.9;
+}
+.foto-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-text img {
+    width: 45vw;
+}
+
+.foto-text p {
+    font-size: 3.5rem;
+    font-family: "Jersey 10";
+    margin: 15px;
+    margin: 40px;
+}
+
+.foto-text span {
+    color: #ffffff;
+    font-size: 4rem;
+}
+
+.opcs {
+    display: flex;
+    flex-direction: column;
+    
+    width: 40vw;
+    gap: 20px;
+}
+
+.opcs button {
+    text-align: start;
+    font-size: 3rem;
+    padding: 10px 20px;
+    font-family: "Consolas";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffd900;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    font-family: "Jersey 10";
+    transition: 0.6s ease;
+}
+
+.opcs button:hover{
+    scale: 1.05;
+     cursor: pointer;
+}
+
+.num-q {
+    color: #ffd900;
+    font-size: 4rem;
+    margin-right: 2vw;
+    font-family: "Jersey 10";
+}
+
+.dica button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 10px;
+    margin-top: 3vh;
+    font-size: 2rem;
+    font-family: "Jersey 10";
+    color: #ffffff;
+    background-color: #01e065;
+    border-radius: 10px;
+    border: none;
+    transition: 0.6s ease;
+}
+
+.dica button:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.dica button img {
+    width: 50px;
+}
+
+@media (min-width: 1600px) {
+    .logo img {
+        width: 150px;
+    }
+    .questao {
+        width: 1000px;
+    }
+    .foto-text img {
+        width: 700px;
+    }
+    .opcs {
+        width: 800px;
+    }
+}
+
+@media (max-width: 1440px) {
+    header {
+        height: 120px;
+        padding: 10px;
+    }
+    .logo img {
+        width: 12vw;
+    }
+    .nav-lvls {
+        column-gap: 15px;
+    }
+    .nav-lvls button {
+        font-size: 1.4rem;
+        padding: 8px 15px;
+    }
+    .nav-lvls img {
+        width: 35px;
+    }
+    .contatos img {
+        width: 40px;
+    }
+    .questao {
+        width: 75vw;
+        padding: 25px;
+        scale: 0.95;
+    }
+    .foto-text img {
+        width: 35vw;
+    }
+    .foto-text p {
+        font-size: 2.5rem;
+        margin: 20px;
+    }
+    .foto-text span {
+        font-size: 3rem;
+    }
+    .opcs {
+        width: 50vw;
+        gap: 15px;
+    }
+    .opcs button {
+        font-size: 2.2rem;
+        padding: 8px 15px;
+    }
+    .num-q {
+        font-size: 2.8rem;
+    }
+    .dica button {
+        padding: 12px 20px;
+        font-size: 1.6rem;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .questao {
+        width: 80vw;
+    }
+    .foto-text img {
+        width: 60vw;
+    }
+    .opcs {
+        width: 65vw;
+    }
+    .nav-lvls button {
+        font-size: 1.4rem;
+        padding: 8px 15px;
+    }
+    .nav-lvls img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .logo img {
+        width: 40vw;
+    }
+    .nav-lvls {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .questao {
+        width: 90vw;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .foto-text img {
+        width: 80vw;
+    }
+    .foto-text p {
+        font-size: 2rem;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .foto-text span {
+        font-size: 2.5rem;
+    }
+    .opcs {
+        width: 100%;
+    }
+    .opcs button {
+        font-size: 1.8rem;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .num-q {
+        font-size: 2.2rem;
+    }
+    .text {
+        font-size: 2.5rem;
+        padding: 40px 20px;
+    }
+    .dica button {
+        font-size: 1.5rem;
+        padding: 15px 20px;
+    }
+    .dica button img {
+        width: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 60vw;
+    }
+    .nav-lvls {
+        flex-direction: column;
+        width: 80%;
+    }
+    .nav-lvls button {
+        width: 100%;
+    }
+    .contatos img {
+        width: 40px;
+    }
+    .foto-text p {
+        font-size: 1.6rem;
+    }
+    .opcs button {
+        font-size: 1.4rem;
+    }
+    .num-q {
+        font-size: 1.8rem;
+        margin-right: 15px;
+    }
+}

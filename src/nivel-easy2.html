@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteBrain - Quiz</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+              <a href="/src/index.html"> <img src="/resources/img/ByteBrain.png" alt="Logo"></a>
+        </div>
+
+        <div class="nav-lvls">
+            <a href="/src/nivel-easy.html"><button class="dif-easy"><img src="/resources/img/dif-easy1.png" alt="">Nivel 1</button></a>
+            <a href="/src/nivel-easy2.html"><button class="dif-easy"><img src="/resources/img/dif-easy1.png" alt="">Nivel 2</button></a>
+            <a href="/src/nivel-medium.html"><button class="dif-medium"><img src="/resources/img/dif-medium2.png" alt="">Nivel 3</button></a>
+            <a href="/src/nivel-medium2.html"><button class="dif-medium"><img src="/resources/img/dif-medium2.png" alt="">Nivel 4</button></a>
+            <a href="/src/nivel-hard.html"><button class="dif-hard"><img src="/resources/img/dif-hard1.png" alt="">Nivel Final</button></a>
+        </div>
+
+        <div class="contatos">
+            <a href="https://github.com/Dalessio498"><img src="/resources/img/github.png" alt=""></a>
+            <a href="https://www.instagram.com/dalessio.dev/"><img src="/resources/img/instagram.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/marco-antonio-dalessio-5a4b9a379/?locale=en_US"><img src="/resources/img/ln.png" alt=""></a>
+        </div>
+    </header>
+
+    <div class="pai-questao">
+        <div class="questao">
+            <div class="foto-text">
+                <img src="/resources/img/Questão-2.png" alt="">
+                <p>Qual será o output desse código<span> ?</span></p>
+            </div>
+            <div class="opcs">
+                <button onclick="verificarResposta('alternativa1', false)" id="alternativa1" type="button">
+                    <span class="num-q">1</span>10true
+                </button>
+
+                <button onclick="verificarResposta('alternativa2', false)" id="alternativa2" type="button">
+                    <span class="num-q">2</span>10
+                </button>
+
+                <button onclick="verificarResposta('alternativa3', false)" id="alternativa3" type="button">
+                    <span class="num-q">3</span>Error
+                </button>
+                
+                <button onclick="verificarResposta('alternativa4', true)" id="alternativa4" type="button">
+                    <span class="num-q">4</span>11
+                </button>
+            </div>
+            <div class="dica" id="dica">
+                <button onclick="mostrarDica()" id="dica-btn" type="button">
+                    <img src="/resources/img/tip.png" alt="">
+                    <p>Mostrar dica</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+function mostrarDica() {
+    document.getElementById("dica-btn").innerHTML = "Para o JavaScript, o true vale 1 e o false vale 0 na hora de fazer cálculos matemáticos."
+}
+</script>
+<script src="/src/index.js"></script>
+
+</html>
